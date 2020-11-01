@@ -11,7 +11,7 @@ public class JavaBoard {
 		
 		int index = 0;
 		int[] ids = new int[10];
-		int id = 1;
+	
 		
 		while(true) {
 			System.out.print("명령어를 입력해주세요: ");
@@ -35,7 +35,6 @@ public class JavaBoard {
 				ids[index] = id;
 				
 				index++;
-				id++;
 				
 			}
 			
