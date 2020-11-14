@@ -11,7 +11,6 @@ public class main {
 		
 	}
 
-	
 	public static int getArticleIndexById(int aid) {
 		int index = -1; // -1 없다.
 		for (int i = 0; i < articles.size(); i++) {
