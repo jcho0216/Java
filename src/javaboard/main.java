@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class main {
 
 	static ArrayList<Article> articles = new ArrayList<>();
+	
+	public static void printArticle(Article article) {
+		
+	}
 
 	
 	public static int getArticleIndexById(int aid) {
@@ -122,12 +126,18 @@ public class main {
 					System.out.println("작성자 : " + article.getWriter());
 					System.out.println("======================");
 					
+					
 					while(true) {
 						System.out.print("상세보기 기능을 선택해주세요(1.댓글 등록, 2.좋아요, 3.수정, 4.삭제, 5.목록으로): ");
 						int rCmdNo = Integer.parseInt(sc.nextLine());
 						
 						if(rCmdNo == 1) {
 							System.out.println("[댓글기능]");
+							String replyBody = sc.nextLine();
+							System.out.println("댓글이 등록되었습니다.");
+							
+							printArticle(article);
+							
 						}
 						else if(rCmdNo == 2) {
 							System.out.println("[좋아요 기능]");
