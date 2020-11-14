@@ -21,8 +21,6 @@ public class Article {
 		return writer;
 	}
 
-
-
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
